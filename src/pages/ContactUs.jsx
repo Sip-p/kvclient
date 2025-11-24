@@ -20,7 +20,7 @@ export default function ContactUs() {
     const data = Object.fromEntries(form.entries());
 
     try {
-      const res = await api.post("/auth/contact", data);
+      const res = await api.post("/api/auth/contact", data);
       alert("Message sent successfully!");
       e.target.reset();
     } catch (err) {
